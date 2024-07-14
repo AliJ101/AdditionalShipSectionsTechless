@@ -6,4 +6,4 @@ tags={
 name="Additional Ship Sections Techless"
 picture="thumbnail.png"
 supported_version="3.12.*"
-path="mod/AdditionalShipSections"
+path="mod/AdditionalShipSectionsTechless"
