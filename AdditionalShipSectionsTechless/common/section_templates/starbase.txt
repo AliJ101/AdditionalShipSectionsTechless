@@ -487,8 +487,6 @@ ship_section_template = {
 	entity = "ion_cannon_section_entity"
 	icon = "GFX_ship_part_core_mid"
 
-	prerequisites = { tech_additional_sections_titan }
-
 	component_slot = {
 		name = "EXTRA_LARGE_01"
 		template = "invisible_extra_large_fixed"
