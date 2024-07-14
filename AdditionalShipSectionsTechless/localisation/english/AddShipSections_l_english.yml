@@ -1,43 +1,5 @@
 ﻿l_english:
 
-
-  #Technologies
-
-  tech_additional_sections_titan: "Additional Titan Configurations"
-  tech_additional_sections_titan_desc: "The Titan in its original form is broadly a heavy artillery platform. Some additional development time allows our naval architects to consider other uses for the cavernous space within a Titan's frame."
-  TECH_UNLOCK_ADDITIONAL_TITAN_SECTIONS_TITLE: "§HAdditional Sections:§! Titan"
-  TECH_UNLOCK_ADDITIONAL_TITAN_SECTIONS_DESC: "§HAdditional Sections§!\nUnlocks a variety of new ship sections for the Titan class ship, enabling greater variety in Titan design."
-  TECH_UNLOCK_ADDITIONAL_IONCANNON_SECTIONS_TITLE: "§HAdditional Sections:§! Ion Cannon"
-  TECH_UNLOCK_ADDITIONAL_IONCANNON_SECTIONS_DESC: "§HAdditional Sections§!\nUnlocks a new way of building Ion Cannons, utilizing X-class weapons."
-
-  tech_additional_sections_corvette: "Additional Small Ship Configurations"
-  tech_additional_sections_corvette_desc: "With the development of the Frigate, some consideration has been given to developing some more point defence focused designs for our smaller ships to help shield our larger vessels from torpedo impacts."
-  TECH_UNLOCK_ADDITIONAL_CORVETTE_SECTIONS_TITLE: "§HAdditional Sections:§! Corvette"
-  TECH_UNLOCK_ADDITIONAL_CORVETTE_SECTIONS_DESC: "§HAdditional Sections§!\nUnlocks the Aegis Ship, a corvette that mounts multiple point defence turrets."
-  TECH_UNLOCK_ADDITIONAL_FRIGATE_SECTIONS_TITLE: "§HAdditional Sections:§! Frigate"
-  TECH_UNLOCK_ADDITIONAL_FRIGATE_SECTIONS_DESC: "§HAdditional Sections§!\nUnlocks the Aegis Boat, a frigate that switches its small weapon slot for a point defense weapon."
-
-  tech_additional_sections_destroyer: "Additional Destroyer Configurations"
-  tech_additional_sections_destroyer_desc: "After the Destroyer project concluded, some of our naval architects had ideas for additional ways to utilize the ship class. This project brings those ideas to fruition."
-  TECH_UNLOCK_ADDITIONAL_DESTROYER_SECTIONS_TITLE: "§HAdditional Sections:§! Destroyer"
-  TECH_UNLOCK_ADDITIONAL_DESTROYER_SECTIONS_DESC: "§HAdditional Sections§!\nUnlocks a selection of new ship sections for the Destroyer class ship, enabling greater variety in Destroyer design."
-
-  tech_additional_sections_cruiser: "Additional Cruiser Configurations"
-  tech_additional_sections_cruiser_desc: "While the Cruiser is already a versatile platform, our naval architects have seen some other ways of using the Cruiser's additional space to extend that versatility even further."
-  TECH_UNLOCK_ADDITIONAL_CRUISER_SECTIONS_TITLE: "§HAdditional Sections:§! Cruiser"
-  TECH_UNLOCK_ADDITIONAL_CRUISER_SECTIONS_DESC: "§HAdditional Sections§!\nUnlocks a selection of new ship sections for the Cruiser class ship, enabling greater variety in Cruiser design."
-
-  tech_additional_sections_battleship: "Additional Battleship Configurations"
-  tech_additional_sections_battleship_desc: "A Battleship is a large and enduring vessel, perfect for some more radical design concepts dreamed up by our naval architects. This project will bring these dreams into reality."
-  TECH_UNLOCK_ADDITIONAL_BATTLESHIP_SECTIONS_TITLE: "§HAdditional Sections:§! Battleship"
-  TECH_UNLOCK_ADDITIONAL_BATTLESHIP_SECTIONS_DESC: "§HAdditional Sections§!\nUnlocks a selection of new ship sections for the Battleship class ship, enabling greater variety in Battleship design."
-
-
-  tech_additional_sections_juggernaut: "Additional Juggernaut Configurations"
-  tech_additional_sections_juggernaut_desc: "The Juggernaut is a massive vessel, part shipyard, part warship. Our naval architects have been keen to envision new configurations for the weapons bays included in this mobile battlestation."
-  TECH_UNLOCK_ADDITIONAL_JUGGERNAUT_SECTIONS_TITLE: "§HAdditional Sections:§! Juggernaut"
-  TECH_UNLOCK_ADDITIONAL_JUGGERNAUT_SECTIONS_DESC: "§HAdditional Sections§!\nUnlocks a selection of new ship sections for the Juggernaut class ship, enabling greater variety in Juggernaut design."
-
   #Ship Section Labels
 
     #Titan
