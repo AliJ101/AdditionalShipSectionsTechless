@@ -3,6 +3,6 @@ tags={
 	"Military"
 	"Spaceships"
 }
-name="Additional Ship Sections"
+name="Additional Ship Sections Techless"
 picture="thumbnail.png"
 supported_version="3.12.*"
