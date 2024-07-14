@@ -101,8 +101,6 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { carrier artillery }
 
-	prerequisites = { tech_additional_sections_juggernaut }
-
 	component_slot = {
 		name = "EXTRA_LARGE_01"
 		template = "extra_large_turret"
@@ -181,8 +179,6 @@ ship_section_template = {
 #	icon = "GFX_ship_part_core_mid"
 #	ai_tags = { carrier artillery }
 #
-#	prerequisites = { tech_additional_sections_juggernaut }
-#
 #	component_slot = {
 #		name = "TITANIC_01"
 #		template = "invisible_titanic_fixed"
@@ -254,8 +250,6 @@ ship_section_template = {
 #	icon = "GFX_ship_part_core_mid"
 #	ai_tags = { artillery }
 #
-#	prerequisites = { tech_additional_sections_juggernaut }
-#
 #	component_slot = {
 #		name = "TITANIC_01"
 #		template = "invisible_titanic_fixed"
@@ -295,8 +289,6 @@ ship_section_template = {
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { carrier }
-
-	prerequisites = { tech_additional_sections_juggernaut }
 
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
