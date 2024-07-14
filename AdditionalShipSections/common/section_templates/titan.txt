@@ -1,0 +1,669 @@
+@section_cost = 160
+
+#BOW
+#Vanilla
+
+ship_section_template = {
+	key = "TITAN_BOW"
+	ship_size = titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery gunship }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#New
+#More Barrels (3 X-slots)
+
+ship_section_template = {
+	key = "TITAN_BOW_3X"
+	ship_size = titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery gunship }
+
+	prerequisites = { tech_additional_sections_titan }
+
+	ai_weight = { #If you like missiles, use this
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Carrier (4 Hangar, 4 Small, 4 PD)
+
+ship_section_template = {
+	key = "TITAN_BOW_4H4S4P"
+	ship_size = titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery carrier }
+
+	prerequisites = { tech_additional_sections_titan } #Make sure you've researched the tech for this
+
+	ai_weight = {	#If you like strike craft, use this
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "invisible_point_defence_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "invisible_point_defence_turret"
+		locatorname = "xl_gun_01"
+	}
+	
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#MID
+#Vanilla
+
+ship_section_template = {
+	key = "TITAN_MID"
+	ship_size = titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery gunship }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_04"
+	}
+
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#New
+#More Barrels (2 Large, 4 Medium)
+
+ship_section_template = {
+	key = "TITAN_MID_2L4M"
+	ship_size = titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery gunship }
+	
+	prerequisites = { tech_additional_sections_titan }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Carrier (3 Hangar, 2 Small, 2 PD)
+
+ship_section_template = {
+	key = "TITAN_MID_3H2S2P"
+	ship_size = titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery carrier }
+	
+	prerequisites = { tech_additional_sections_titan }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_04"
+	}
+
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Missiles (4 Medium, 8 Small)
+
+ship_section_template = {
+	key = "TITAN_MID_4M8S"
+	ship_size = titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery gunship }
+	
+	prerequisites = { tech_additional_sections_titan }
+
+	ai_weight = {
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "medium_turret"
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_04"
+	}
+
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#STERN
+#Vanilla
+
+ship_section_template = {
+	key = "TITAN_STERN"
+	ship_size = titan
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery gunship }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#New
+
+#More Barrels (4 Medium)
+ship_section_template = {
+	key = "TITAN_STERN_4M"
+	ship_size = titan
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery gunship }
+
+	prerequisites = { tech_additional_sections_titan }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_02"
+	}
+
+	aux_utility_slots = 4
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Carrier (1 Hangar, 1 Medium, 2 PD)
+ship_section_template = {
+	key = "TITAN_STERN_1H1M2P"
+	ship_size = titan
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery carrier }
+
+	prerequisites = { tech_additional_sections_titan }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "large_gun_02"
+	}
+
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Missiles (2 Medium, 4 Small)
+ship_section_template = {
+	key = "TITAN_STERN_2M4S"
+	ship_size = titan
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery carrier }
+
+	prerequisites = { tech_additional_sections_titan }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "large_gun_02"
+	}
+
+	aux_utility_slots = 4
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
