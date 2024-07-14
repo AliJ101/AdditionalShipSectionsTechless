@@ -122,8 +122,6 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { gunship explosive explosive_stealth }
 
-	prerequisites = { tech_additional_sections_cruiser }
-
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
@@ -173,8 +171,6 @@ ship_section_template = {
 		}
 	}
 
-	prerequisites = { tech_additional_sections_cruiser }
-
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
@@ -200,8 +196,6 @@ ship_section_template = {
 	entity = "cruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { gunship screen }
-
-	prerequisites = { tech_additional_sections_cruiser }
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -418,8 +412,6 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { gunship }
 
-	prerequisites = { tech_additional_sections_cruiser }
-
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
@@ -468,8 +460,6 @@ ship_section_template = {
 	entity = "cruiser_mid_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { screen gunship }
-
-	prerequisites = { tech_additional_sections_cruiser }
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -583,8 +573,6 @@ ship_section_template = {
 	entity = "cruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = {	screen explosive explosive_stealth carrier carrier_stealth }
-
-	prerequisites = { tech_additional_sections_cruiser }
 
 	component_slot = {
 		name = "PD_01"
