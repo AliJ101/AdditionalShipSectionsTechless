@@ -163,8 +163,6 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { gunship screen }
 
-	prerequisites = { tech_additional_sections_destroyer }
-
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -217,8 +215,6 @@ ship_section_template = {
 	entity = "destroyer_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { carrier carrier_stealth }
-
-	prerequisites = { tech_additional_sections_destroyer }
 
 	ai_weight = {
 		modifier = {
